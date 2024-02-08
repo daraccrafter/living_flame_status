@@ -1,0 +1,7 @@
+# Ignore Rust build artifacts
+target/
+Cargo.lock
+.git/
+.gitignore
+.env
+.DS_Store
