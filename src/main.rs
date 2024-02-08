@@ -95,7 +95,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                 || realm["realmLockStatus"] == Value::Null
                             {
                                 if !sms_sent_recently {
-                                    print!("HERE! SMS Counter: {}\n", sms_counter);
+                                    print!("SMS Counter: {}\n", sms_counter);
                                     send_sms()?;
                                     last_sms_sent_time = Instant::now();
                                     sms_sent_recently = true;
